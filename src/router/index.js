@@ -2,22 +2,22 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 
-// exmaples
-import ExmapleTemplate from '@/components/exmaples/Template'
-// exmaples > elements
-import Button from '@/components/exmaples/Elements/Button'
-import Container from '@/components/exmaples/Elements/Container'
+// examples
+import ExmapleTemplate from '@/components/examples/Template'
+// examples > elements
+import Button from '@/components/examples/Elements/Button'
+import Container from '@/components/examples/Elements/Container'
 
-// exmaples > collections
-import Breadcrumb from '@/components/exmaples/Collections/Breadcrumb'
-import Form from '@/components/exmaples/Collections/Form'
-import Grid from '@/components/exmaples/Collections/Grid'
+// examples > collections
+import Breadcrumb from '@/components/examples/Collections/Breadcrumb'
+import Form from '@/components/examples/Collections/Form'
+import Grid from '@/components/examples/Collections/Grid'
 
-// exmaples > views
-import Card from '@/components/exmaples/Views/Card'
+// examples > views
+import Card from '@/components/examples/Views/Card'
 
-// exmaples > charts
-import Circle from '@/components/exmaples/Charts/Circle'
+// examples > charts
+import Circle from '@/components/examples/Charts/Circle'
 
 // semantic-ui-vue
 import SuiVue from 'semantic-ui-vue'
@@ -35,7 +35,7 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/exmaples',
+      path: '/examples',
       component: ExmapleTemplate,
       children: [
         // Elements
