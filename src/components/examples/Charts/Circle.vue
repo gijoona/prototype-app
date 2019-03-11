@@ -1,16 +1,22 @@
 <template>
   <sui-container>
-    <sui-header>Charts
-      <sui-header-subheader>
-        Circle
-      </sui-header-subheader>
-    </sui-header>
-    <svg id="svg" :width="svgwidth" :height="svgheight"></svg>
-    <div>
-      cx: <input type="number" v-model="cx"/>
-      cy: <input type="number" v-model="cy"/>
-      r: <input type="number" v-model="r"/>
-    </div>
+    <sui-grid>
+      <sui-grid-row>
+        <sui-grid-column>
+          <sui-header>Charts
+            <sui-header-subheader>
+              Circle
+            </sui-header-subheader>
+          </sui-header>
+          <svg id="svg" :width="svgwidth" :height="svgheight"></svg>
+          <div>
+            cx: <input type="number" v-model="cx"/>
+            cy: <input type="number" v-model="cy"/>
+            r: <input type="number" v-model="r"/>
+          </div>
+        </sui-grid-column>
+      </sui-grid-row>
+    </sui-grid>
   </sui-container>
 </template>
 <script>
